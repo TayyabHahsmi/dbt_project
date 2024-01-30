@@ -9,14 +9,3 @@ silverpush:
       port: 28463
       dbname: mirror
       schema: public
-      
-      
-    test:
-      type: bigquery
-      method: service-account
-      project: tactile-petal-820
-      dataset: Tayyab_dataset
-      threads: 1
-      keyfile: /root/dbt_project/g.json
-      location: US
-
