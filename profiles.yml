@@ -1,12 +1,22 @@
-test_profile:
+silverpush:
   target: dev
   outputs:
     dev:
       type: postgres
-      host: postgres
-      user: postgres
-      password: postgres
-      port: 5432
-      dbname: postgres
+      host: m-db.ccsqbljgvpi4.ap-south-1.rds.amazonaws.com
+      user: tayyab
+      password: vI2nX5uV6mK4kp9aJ9xV7oF3gZ2bV0
+      port: 28463
+      dbname: mirror
       schema: public
+      
+      
+    test:
+      type: bigquery
+      method: service-account
+      project: tactile-petal-820
+      dataset: Tayyab_dataset
       threads: 1
+      keyfile: /root/dbt_project/g.json
+      location: US
+
