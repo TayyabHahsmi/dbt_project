@@ -6,14 +6,14 @@ WITH total_view_count AS (
     SELECT
         SUM(viewcount) AS total_views
     FROM
-       `Tayyab_dataset.dbt_sprinkle_channel_info`
+       `airbyte_testing.dbt_sprinkle_channel_info`
 )
 
 SELECT
     sci.*,
     tvc.total_views
 FROM
-   `Tayyab_dataset.dbt_sprinkle_channel_info` sci
+   `airbyte_testing.dbt_sprinkle_channel_info` sci
 JOIN
     total_view_count tvc
 
