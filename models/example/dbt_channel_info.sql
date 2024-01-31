@@ -10,10 +10,7 @@ WITH total_view_count AS (
 )
 
 SELECT
-    sci.*,
-    tvc.total_views
+    *
 FROM
-   `airbyte_testing.dbt_sprinkle_channel_info` sci
-JOIN
-    total_view_count tvc
+   `airbyte_testing.dbt_sprinkle_channel_info`
 
