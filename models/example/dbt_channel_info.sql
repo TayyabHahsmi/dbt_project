@@ -10,6 +10,10 @@ WITH total_view_count AS (
 )
 
 SELECT
-    *
+    sci.*,
+    tvc.total_views
 FROM
-    total_view_count;
+    sprinkle_channel_info sci
+JOIN
+    total_view_count tvc
+
