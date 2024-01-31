@@ -1,7 +1,7 @@
 silverpush:
   target: prod
   outputs:
-    dev:
+    prod:
       type: postgres
       host: m-db.ccsqbljgvpi4.ap-south-1.rds.amazonaws.com
       user: tayyab
