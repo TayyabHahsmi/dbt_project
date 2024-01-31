@@ -6,7 +6,7 @@ WITH total_view_count AS (
     SELECT
         SUM(viewcount) AS total_views
     FROM
-       `Tayyab_dataset.dbt_sprinkle_channel_info'
+       `Tayyab_dataset.dbt_sprinkle_channel_info`
 )
 
 SELECT
