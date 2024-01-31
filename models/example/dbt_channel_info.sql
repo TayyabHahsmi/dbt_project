@@ -6,7 +6,7 @@ WITH total_view_count AS (
     SELECT
         SUM(viewcount) AS total_views
     FROM
-      `airbyte_testing.dbt_sprinkle_channel_info`
+      `dbt_sprinkle_channel_info`
 )
 
 SELECT
