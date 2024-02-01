@@ -4,9 +4,9 @@
 
 WITH total_view_count AS (
     SELECT
-        SUM(viewcount) AS total_views
+        channnelid,SUM(viewcount)AS total_views, subscriber, pusblishedat, updated_at 
     FROM
-      `dbt_sprinkle_channel_info`
+      sprinkle_channel_info
 )
 
 SELECT
