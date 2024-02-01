@@ -6,7 +6,7 @@ WITH total_view_count AS (
     SELECT
         channnelid,SUM(viewcount)AS total_views, subscriber, pusblishedat, updated_at 
     FROM
-     `airbyte_testing.sprinkle_channel_info` group by subscriber
+     `Tayyab_dataset.dbt_local_sprinkle_channel_info` group by subscriber
 )
 
 SELECT
