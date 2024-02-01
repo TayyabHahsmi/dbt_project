@@ -4,7 +4,7 @@
 
 WITH total_view_count AS (
     SELECT
-        channelid,SUM(viewcount)AS total_views, subscriber, publishedat, updated_at 
+        SUM(viewcount)AS total_view_count 
     FROM
      `Tayyab_dataset.dbt_local_sprinkle_channel_info`
 )
