@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: openweb_transformed
+  - name: transformed_openweb
     description: "A starter dbt model"
     columns:
       - name: uuid
