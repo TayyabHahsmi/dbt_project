@@ -1,11 +1,11 @@
-silverpush:
-  target: prod
+openweb:
+  target: dev
   outputs:
-    prod:
+    dev:
       type: postgres
-      host: m-db.ccsqbljgvpi4.ap-south-1.rds.amazonaws.com
-      user: tayyab
-      password: vI2nX5uV6mK4kp9aJ9xV7oF3gZ2bV0
-      port: 28463
-      dbname: mirror
+      host: 167.172.5.48
+      user: openweb_dp
+      password: 84c3b8fb990eba2a1b338669b3f03b0155e6b329
+      port: 51123
+      dbname: dp_mediagrid
       schema: public

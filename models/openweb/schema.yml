@@ -1,0 +1,97 @@
+version: 2
+
+models:
+  - name: openweb_transformed
+    description: "A starter dbt model"
+    columns:
+      - name: uuid
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+      - name: timestamps
+        description: "Description for timestamps column"
+        tests:
+          - not_null
+
+      - name: url_hash
+        description: "Description for url_hash column"
+        tests:
+          - not_null
+
+      - name: created_at
+        description: "Description for created_at column"
+        tests:
+          - not_null
+
+      - name: date
+        description: "Description for date column"
+        tests:
+          - not_null
+
+      - name: page_url
+        description: "Description for page_url column"
+        tests:
+          - not_null
+
+      - name: country
+        description: "Description for country column"
+        tests:
+          - not_null
+
+      - name: sname
+        description: "Description for sname column"
+        tests:
+          - not_null
+
+      - name: status
+        description: "Description for status column"
+        tests:
+          - not_null
+
+      - name: msg
+        description: "Description for msg column"
+        tests:
+          - not_null
+
+      - name: err_msg
+        description: "Description for err_msg column"
+        tests:
+          - not_null
+
+      - name: status_time
+        description: "Description for status_time column"
+        tests:
+          - not_null
+
+      - name: updated_at
+        description: "Description for updated_at column"
+        tests:
+          - not_null
+
+      - name: scrapped_id
+        description: "Description for scrapped_id column"
+        tests:
+          - not_null
+
+      - name: batch_id
+        description: "Description for batch_id column"
+        tests:
+          - not_null
+
+      - name: processing_status
+        description: "Description for processing_status column"
+        tests:
+          - not_null
+
+      - name: domain
+        description: "Description for domain column"
+        tests:
+          - not_null
+
+      - name: folder_count
+        description: "Description for folder_count column"
+        tests:
+          - not_null
+
