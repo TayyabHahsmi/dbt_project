@@ -1,0 +1,18 @@
+config:
+  partial_parse: true
+  printer_width: 120
+  send_anonymous_usage_stats: false
+  use_colors: true
+normalize:
+  outputs:
+    prod:
+      driver: http
+      host: 139.5.190.123
+      password: MTM5LjUuMTkwLjEyMwo=
+      port: 8123
+      schema: clickhouse_staging
+      secure: false
+      type: clickhouse
+      user: silverpush
+      verify: false
+  target: prod
